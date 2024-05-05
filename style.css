@@ -10,9 +10,36 @@
 }
 
 
+/* @media(min-width:980px){
+  .service .stack{
+    height: 449px  !important;
+  }
+  .my-process .stack{
+    height: 690px !important;
+  }
+}
+ */
+
 
 @media(max-width:480px) {
-  h1{
+  .my-works .card-container {
+    padding: 1rem !important;
+   
+  }
+  .my-process-frst-col{
+    height: 343px !important;
+
+  }
+
+  .stack__card{
+    top: 2rem !important;
+  }
+
+  .footer-social-icon img {
+    width: 36px;
+  }
+
+  h1 {
     font-size: 3rem !important;
   }
 
@@ -39,28 +66,33 @@
     width: 100%;
     object-fit: contain;
   }
-  .wb-card-01{
+
+  .wb-card-01 {
     margin-top: 3rem;
   }
-  .footer.tag.visible{
-    padding: 2rem;
+
+  .footer.tag.visible {
+    padding: 1.5rem;
   }
-  .footer .footer-img{
+
+  .footer .footer-img {
     padding-left: 0 !important;
   }
-  .footer .footer-social-icon{
+
+  .footer .footer-social-icon {
     padding: 0 !important;
   }
 
 }
 
 
-.work-card-sm h3{
+.work-card-sm h3 {
 
   color: #fff !important;
   margin: 0;
 }
-.work-card-sm{
+
+.work-card-sm {
   padding: 12px;
   background-color: #535353a6;
   color: #fff !important;
@@ -78,18 +110,20 @@
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
-  
-  
+
+
   position: sticky;
-  top: 0;
-  
-   
+  top: 12rem;
+
+
 }
- 
 
 
 
-.bg-light{
+
+
+
+.bg-light {
   background-color: #fff !important;
 }
 
@@ -123,7 +157,7 @@ h1 {
 
 
 
- 
+
 .uk-navbar-container:not(.uk-navbar-transparent) {
   background: #1E1E1E !Important;
 }
@@ -142,7 +176,7 @@ h1 {
 }
 
 h1 {
-  font-size: 5.3rem  !important;
+  font-size: 5.3rem !important;
 }
 
 h2 {
@@ -224,10 +258,11 @@ h2 {
 }
 
 
-@media(max-width:480px) {}
+/* @media(max-width:480px) {} */
 
 .my-works .card-container {
   padding: 2rem;
+ 
 }
 
 .work-card h2 {
@@ -414,6 +449,31 @@ a {
   cursor: pointer;
   /*   use transform to simply rotate the arrow */
   transform: rotate(42deg);
+}
+
+.arrow-container-white {
+  position: relative;
+  top: 50%;
+
+  width: 35px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  /*   use transform to simply rotate the arrow */
+  transform: rotate(42deg);
+}
+
+.arrow-white {
+  font-size: 25px;
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  transform: translateY(50px);
+  top: -120%;
+  left: 50%;
+  margin-left: -9px;
 }
 
 .arrow {
